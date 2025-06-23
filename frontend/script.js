@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       try {
-        const res = await fetch("http://localhost:5000/contact", {  // ✅ Updated here
+        const res = await fetch("https://my-portfolio-backend-4qn2.onrender.com/contact", { // ✅ LIVE URL
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ name, email, message }),
