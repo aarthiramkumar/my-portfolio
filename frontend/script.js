@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       preloader.style.opacity = "0";
       preloader.style.visibility = "hidden";
-    }, 1000); // delay for preloader effect
+    }, 1000);
   }
 
   // Section switching
