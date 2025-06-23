@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aarthi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="letter-A" aria-label="Loading">A</div>
+  </div>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" aria-label="Primary Navigation">
+    <h2>Aarthi</h2>
+    <a href="#" onclick="showSection('home'); return false;"><i class="fas fa-home"></i> Home</a>
+    <a href="#" onclick="showSection('about'); return false;"><i class="fas fa-user"></i> About</a>
+    <a href="#" onclick="showSection('portfolio'); return false;"><i class="fas fa-briefcase"></i> Portfolio</a>
+    <a href="#" onclick="showSection('comments'); return false;"><i class="fas fa-comments"></i> Comments</a>
+    <a href="#" onclick="showSection('achievements'); return false;"><i class="fas fa-trophy"></i> Achievements</a>
+    <a href="#" onclick="showSection('profile'); return false;"><i class="fas fa-globe"></i> Public Profile</a>
+    <a href="#" onclick="showSection('contact'); return false;"><i class="fas fa-envelope"></i> Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Home Section -->
+    <section id="home" class="section active title-section">
+      <div class="intro-container">
+        <img src="portfolio profile.jpg" alt="Aarthi's Profile Picture" class="home-profile-img" />
+        <div class="intro-text">
+          <h1>I'm <span class="highlight">Aarthi</span></h1>
+          <h2><span id="typed-text">Full-Stack Developer</span></h2>
+          <p>I’m a full-stack developer passionate about building responsive websites and intelligent systems. I also love crafting beautiful UI/UX designs and solving real-world problems using tech.</p>
+          <blockquote>“Turning ideas into impactful solutions.”</blockquote>
+        </div>
+      </div>
+
+      <div class="cta-buttons">
+        <a href="Aarthi_Resume.pdf" target="_blank" class="btn">View Resume</a>
+        <a href="#" class="btn" onclick="showSection('contact'); return false;">Hire Me</a>
+        <a href="#" class="btn btn-outline" onclick="showSection('contact'); return false;">Contact</a>
+      </div>
+
+      <div class="highlights">
+        <div class="highlight-box"><h3>3+</h3><p>Internships</p></div>
+        <div class="highlight-box"><h3>10+</h3><p>Projects</p></div>
+        <div class="highlight-box"><h3>9.08</h3><p>CGPA</p></div>
+        <div class="highlight-box"><h3>5+</h3><p>Certifications</p></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I specialize in full-stack development, UI/UX design, and building scalable web applications using the following technologies:</p>
+
+      <table class="skills-table">
+        <tbody>
+          <tr>
+            <th>Programming Languages</th>
+            <td><i class="fab fa-java"></i> <i class="fab fa-python"></i> <i class="fas fa-code"></i></td>
+          </tr>
+          <tr>
+            <th>Front-End</th>
+            <td><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-react"></i></td>
+          </tr>
+          <tr>
+            <th>Back-End</th>
+            <td><i class="fab fa-node-js"></i> <i class="fas fa-server"></i> <i class="fab fa-js-square"></i></td>
+          </tr>
+          <tr>
+            <th>DevOps</th>
+            <td><i class="fab fa-docker"></i> <i class="fab fa-aws"></i> <i class="fas fa-cloud"></i></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <section id="professional-experience">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <time>May 2024 – July 2024</time>
+            <h4>ML Intern – Shiash Info Solutions</h4>
+            <ul><li>Developed ML models and optimized pipelines.</li></ul>
+          </article>
+          <article class="timeline-item">
+            <time>Nov 2023 – Dec 2023</time>
+            <h4>Technical Intern – TechMedZ Labs</h4>
+            <ul><li>Built chatbot using HTML/CSS, JavaScript, and Python.</li></ul>
+          </article>
+          <article class="timeline-item">
+            <time>July 2022</time>
+            <h4>Full Stack Intern – Hejex Technologies</h4>
+            <ul><li>Developed EMS using React, Node.js, and MySQL.</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <h3>Interests & Goals</h3>
+      <div class="interests-goals">
+        <p>🌟 <strong>AI & ML:</strong> Real-world intelligent systems.</p>
+        <p>🌐 <strong>IoT:</strong> Smart systems for environment/agriculture.</p>
+        <p>🎨 <strong>UI/UX:</strong> Beautiful & intuitive designs.</p>
+        <p>🚀 <strong>Entrepreneurship:</strong> Tech-driven impact.</p>
+        <p>📚 <strong>Lifelong Learning:</strong> Staying current with tech.</p>
+        <p>🌱 <strong>Eco-Tech:</strong> Sustainable solutions.</p>
+      </div>
+    </section>
+
+     <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+      <h2>My Projects</h2>
+      <div class="portfolio-items">
+        <div class="portfolio-card">
+          <h3>PlantMed: AI-Powered Crop Disease Detection</h3>
+          <p>Android app using TFLite to detect tomato leaf diseases.</p>
+          <a href="https://github.com/aarthiramkumar/Plantmed.git" target="_blank" class="btn btn-outline">View Code</a>
+        </div>
+
+        <div class="portfolio-card">
+          <h3>Verify AI - Misinformation Detection & Fact Checking </h3>
+          <p>AI models to analyze images, texts, and videos for fake or manipulated content in real-time.</p>
+          <a href="https://github.com/aarthiramkumar/VerifyAI.git" target="_blank" class="btn btn-outline">View Code</a>
+        </div>
+
+        <div class="portfolio-card">
+          <h3>Credit Card Fraud Detection Model</h3>
+          <p>A robust Credit Card Fraud Detection Model using machine learning techniques.</p>
+          <a href="https://github.com/aarthiramkumar/credit-card-fraud-detection-system.git" target="_blank" class="btn btn-outline">View Code</a>
+        </div>
+
+        <div class="portfolio-card">
+          <h3>Password Generator</h3>
+          <p> Password Generator is a tool designed to generate strong and secure passwords for various applications.</p>
+          <a href="https://github.com/aarthiramkumar/random-password-generator.git" target="_blank" class="btn btn-outline">View Code</a>
+        </div>
+
+        <div class="portfolio-card">
+          <h3>Portfolio Website</h3>
+          <p>Fully responsive website with animations and preloader.</p>
+          <a href="https://github.com/your-username/portfolio-website" target="_blank" class="btn btn-outline">View Code</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comments -->
+    <section id="comments" class="section">
+      <h3>User Comments</h3>
+      <div class="carousel-wrapper">
+        <div class="carousel-card"><div class="stars">⭐⭐⭐⭐⭐</div><h4>John</h4><p>Highly recommend!</p></div>
+        <div class="carousel-card"><div class="stars">⭐⭐⭐⭐</div><h4>Jane</h4><p>Creative & timely delivery.</p></div>
+        <div class="carousel-card"><div class="stars">⭐⭐⭐⭐⭐</div><h4>Michael</h4><p>Excellent service!</p></div>
+        <div class="carousel-card"><div class="stars">⭐⭐⭐</div><h4>Emily</h4><p>Good work, needs polish.</p></div>
+      </div>
+    </section>
+
+    <!-- ✅ FIXED: Achievements Section with class -->
+    <section id="achievements" class="section" data-aos="fade-up">
+      <h1>Achievements</h1>
+      <div class="achievement-grid">
+        <div class="achievement-card"><div class="icon">🎓</div><h3>CS</h3><p>Graduate with 9 CGPA.</p></div>
+        <div class="achievement-card"><div class="icon">🌟</div><h3>State Zonal Head</h3><p>YUCI leader.</p></div>
+        <div class="achievement-card"><div class="icon">🎤</div><h3>Public Speaker</h3><p>Empowerment talk.</p></div>
+        <div class="achievement-card"><div class="icon">💼</div><h3>3 Internships</h3><p>Real-world industry projects.</p></div>
+        <div class="achievement-card"><div class="icon">📢</div><h3>Event Organizer</h3><p>Open mic host.</p></div>
+        <div class="achievement-card"><div class="icon">🏅</div><h3>Hackathon Finalist</h3><p>plant-disease-detector.</p></div>
+      </div>
+    </section>
+
+    <!-- Public Profile -->
+    <section id="profile" class="section">
+  <h2>Public Profiles</h2>
+  <ul>
+    <li><a href="https://www.linkedin.com/in/aarthi-r-04805a26" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+    <li><a href="https://github.com/aarthiramkumar" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+    <li><a href="https://leetcode.com/u/aarthi_rs/" target="_blank"><i class="fas fa-code"></i> LeetCode</a></li>
+    <li><a href="https://www.fiverr.com/aarthi486/buying?source=avatar_menu_profile" target="_blank"><i class="fas fa-briefcase"></i> Fiverr</a></li>
+  </ul>
+</section>
+
+
+   <section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <form id="contactForm" class="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+    <p id="formResponse" class="form-response"></p>
+  </form>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="home-footer">
+      &copy; 2025 Aarthi's Portfolio. All rights reserved.
+    </footer>
+
+  </main>
+
+</body>
+</html>
